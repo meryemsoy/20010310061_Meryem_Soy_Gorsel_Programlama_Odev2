@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.derssecimi"
+             Title="Ders Seçimi"
+             BackgroundColor="Black">
+    <StackLayout >
+        <Label Text="Ders Seçimi" FontSize="Title" HorizontalOptions="StartAndExpand" Margin="0,20,0,10"  TextColor="White"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Dersleri Seçin" TextColor="White"/>
+        </StackLayout>
+        <StackLayout>
+            <Grid Padding="10" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto, *">
+                <CheckBox x:Name="görsel" IsChecked="False" Grid.Column="0" Grid.Row="0" />
+                <Label Text="Görsel Programlama" TextColor="White" VerticalOptions="Center" Grid.Column="1" Grid.Row="0"/>
+                <CheckBox x:Name="mikro" IsChecked="False" Grid.Column="0" Grid.Row="1" />
+                <Label Text="Mikroişlemciler" TextColor="White" VerticalOptions="Center" Grid.Column="1" Grid.Row="1"/>
+                <CheckBox x:Name="makine" IsChecked="False" Grid.Column="0" Grid.Row="2" />
+                <Label Text="Makine Öğrenmesi" TextColor="White" VerticalOptions="Center" Grid.Column="1" Grid.Row="2"/>
+                <CheckBox x:Name="analog" IsChecked="False" Grid.Column="0" Grid.Row="3" />
+                <Label Text="Analog Haberleşme" TextColor="White" VerticalOptions="Center" Grid.Column="1" Grid.Row="3"/>
+                <CheckBox x:Name="sinyaller" IsChecked="False" Grid.Column="0" Grid.Row="4" />
+                <Label Text="Sinyaller ve Sistemler" TextColor="White" VerticalOptions="Center" Grid.Column="1" Grid.Row="4"/>
+                <CheckBox x:Name="mühendislik" IsChecked="False" Grid.Column="0" Grid.Row="5" />
+                <Label Text="Mühendislik Bitirme"  TextColor="White" VerticalOptions="Center" Grid.Column="1" Grid.Row="5"/>
+            </Grid>
+        </StackLayout>
+
+        <Button Text="Kaydet" BackgroundColor="Grey" Clicked="KaydetButton_Clicked" HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
