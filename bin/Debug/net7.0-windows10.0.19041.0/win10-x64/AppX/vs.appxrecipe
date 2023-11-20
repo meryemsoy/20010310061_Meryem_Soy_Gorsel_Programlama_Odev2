@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-20T12:43:35.266</Modified>
+      <Modified>2023-11-20T12:58:33.421</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
-      <Modified>2023-11-20T12:43:34.500</Modified>
+      <Modified>2023-11-20T12:58:32.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
-      <Modified>2023-11-20T12:43:34.500</Modified>
+      <Modified>2023-11-20T12:58:32.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiApp1.deps.json">
       <PackagePath>MauiApp1.deps.json</PackagePath>

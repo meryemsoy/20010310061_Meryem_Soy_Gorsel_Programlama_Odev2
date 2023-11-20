@@ -328,3 +328,4 @@ C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\Ma
 C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\check.scale-100.png
 C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\information.scale-100.png
 C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\liste.scale-100.png
+C:\Users\Asus\OneDrive - Bartın Üniversitesi\Masaüstü\Görsel Programlama\MauiApp1\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiApp1.sourcelink.json
