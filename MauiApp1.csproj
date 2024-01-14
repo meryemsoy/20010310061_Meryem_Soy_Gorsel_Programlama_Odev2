@@ -51,26 +51,57 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\calculator.png" />
 	  <None Remove="Resources\Images\check.png" />
+	  <None Remove="Resources\Images\decrease.png" />
 	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\increase.png" />
 	  <None Remove="Resources\Images\information.png" />
 	  <None Remove="Resources\Images\liste.png" />
+	  <None Remove="Resources\Images\minus.png" />
+	  <None Remove="Resources\Images\pen.png" />
+	  <None Remove="Resources\Images\plus.png" />
+	  <None Remove="Resources\Images\refresh.png" />
+	  <None Remove="Resources\Images\remove.png" />
+	  <None Remove="Resources\Images\share.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
+		<PackageReference Include="FirebaseDatabase.net" Version="4.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="bilgi.xaml">
+	  <Compile Update="haberler.xaml.cs">
+	    <DependentUpon>Haberler.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="DovizKurlari.xaml.cs">
+	    <DependentUpon>DovizKurlari.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="hava_durumu.xaml.cs">
+	    <DependentUpon>hava_durumu.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Ayarlar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="derssecimi.xaml">
+	  <MauiXaml Update="DovizKurlari.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="nothesabı.xaml">
+	  <MauiXaml Update="Haberler.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="HaberlerDetails.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="hava_durumu.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="yapılacaklar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="YapılacaklarDuzenle.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

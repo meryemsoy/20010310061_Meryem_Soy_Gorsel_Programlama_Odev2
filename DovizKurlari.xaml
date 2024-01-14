@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.DovizKurlari"
+             Title="Döviz Kurları">
+    <Grid RowDefinitions="Auto,Auto,Auto">
+        <Label Grid.Row="0" Text="Güncel Döviz Kurları" FontSize="Large"  Margin="20"/>
+        <CollectionView Grid.Row="1"  x:Name="dovizliste" Margin="20" SelectionMode="None">
+            <CollectionView.Header>
+                <Grid ColumnDefinitions="*,*,*,*,*">
+                    <Label Grid.Column="0" Text="Adı"/>
+                    <Label Grid.Column="1" Text="Alış Fiyatı"/>
+                    <Label Grid.Column="2" Text="Satış Fiyatı"/>
+                    <Label Grid.Column="3" Text="Fark"/>
+                    <Label Grid.Column="4" Text="Yön"/>
+                </Grid>
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                        <Grid ColumnDefinitions="*,*,*,*,*">
+                            <Label Grid.Column="0" Text="{Binding DName}" />
+                            <Label Grid.Column="1" Text="{Binding FAlis}" />
+                            <Label Grid.Column="2" Text="{Binding FSatis}"/>
+                            <Label Grid.Column="3" Text="{Binding Fark}" />
+                            <Image Grid.Column="4" Source="{Binding Yon}" HeightRequest="20" />
+                        </Grid>
+                    </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Grid.Row="2"  Text="Güncelle" TextColor="Black" Margin="20" Clicked="Button_Clicked" Background="#512BD4"  ImageSource="refresh.png" HeightRequest="20"/>
+    </Grid>
+</ContentPage>

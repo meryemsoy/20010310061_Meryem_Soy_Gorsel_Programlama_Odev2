@@ -24,29 +24,41 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/bilgi.xaml]
+[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/Ayarlar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.bilgi.xaml
-build_metadata.AdditionalFiles.TargetPath = bilgi.xaml
-build_metadata.AdditionalFiles.RelativePath = bilgi.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Ayarlar.xaml
+build_metadata.AdditionalFiles.TargetPath = Ayarlar.xaml
+build_metadata.AdditionalFiles.RelativePath = Ayarlar.xaml
 
-[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/derssecimi.xaml]
+[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/DovizKurlari.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.derssecimi.xaml
-build_metadata.AdditionalFiles.TargetPath = derssecimi.xaml
-build_metadata.AdditionalFiles.RelativePath = derssecimi.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.DovizKurlari.xaml
+build_metadata.AdditionalFiles.TargetPath = DovizKurlari.xaml
+build_metadata.AdditionalFiles.RelativePath = DovizKurlari.xaml
+
+[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/Haberler.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Haberler.xaml
+build_metadata.AdditionalFiles.TargetPath = Haberler.xaml
+build_metadata.AdditionalFiles.RelativePath = Haberler.xaml
+
+[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/HaberlerDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.HaberlerDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = HaberlerDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = HaberlerDetails.xaml
+
+[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/hava_durumu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.hava_durumu.xaml
+build_metadata.AdditionalFiles.TargetPath = hava_durumu.xaml
+build_metadata.AdditionalFiles.RelativePath = hava_durumu.xaml
 
 [C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
-[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/nothesabı.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.nothesabı.xaml
-build_metadata.AdditionalFiles.TargetPath = nothesabı.xaml
-build_metadata.AdditionalFiles.RelativePath = nothesabı.xaml
 
 [C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -65,3 +77,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.yapılacaklar.xaml
 build_metadata.AdditionalFiles.TargetPath = yapılacaklar.xaml
 build_metadata.AdditionalFiles.RelativePath = yapılacaklar.xaml
+
+[C:/Users/Asus/OneDrive - Bartın Üniversitesi/Masaüstü/Görsel Programlama/MauiApp1/YapılacaklarDuzenle.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.YapılacaklarDuzenle.xaml
+build_metadata.AdditionalFiles.TargetPath = YapılacaklarDuzenle.xaml
+build_metadata.AdditionalFiles.RelativePath = YapılacaklarDuzenle.xaml

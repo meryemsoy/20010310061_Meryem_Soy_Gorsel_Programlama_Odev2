@@ -12,16 +12,22 @@
     <MauiXaml Update="AppShell.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="bilgi.xaml">
+    <MauiXaml Update="Ayarlar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="derssecimi.xaml">
+    <MauiXaml Update="DovizKurlari.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Haberler.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="HaberlerDetails.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="MainPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="nothesabı.xaml">
+    <MauiXaml Update="hava_durumu.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Platforms\Windows\App.xaml">
@@ -34,6 +40,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="yapılacaklar.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="YapılacaklarDuzenle.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

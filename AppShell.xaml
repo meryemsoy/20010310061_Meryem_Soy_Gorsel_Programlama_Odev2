@@ -8,30 +8,35 @@
 
     <ShellContent
         Title="Anasayfa"
-        Icon="home.png"
+        Icon="homes.png"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage"
         />
     <ShellContent
-        Title="Öğrenci Bilgisi"
-        Icon="information.png"
-        ContentTemplate="{DataTemplate local:bilgi}"
+        Title="Kurlar"
+        Icon="exchange.png"
+        ContentTemplate="{DataTemplate local:DovizKurlari}"
         Route="bilgi" />
     <ShellContent
-         Title="Ders Seçimi"
-         Icon="check.png"
-         ContentTemplate="{DataTemplate local:derssecimi}"
+         Title="Haberler"
+         Icon="technology.png"
+         ContentTemplate="{DataTemplate local:Haberler}"
          Route="derssecimi" />
 
     <ShellContent
-        Title="Not Hesaplama"
-        Icon="calculator.png"
-        ContentTemplate="{DataTemplate local:nothesabı}"
+        Title="Hava Durumu"
+        Icon="weather.png"
+        ContentTemplate="{DataTemplate local:hava_durumu}"
         Route="nothesabı" />
     <ShellContent
          Title="Yapılacaklar"
-         Icon="liste.png"
+         Icon="things.png"
          ContentTemplate="{DataTemplate local:yapılacaklar}"
          Route="yapılacaklar" />
+    <ShellContent
+         Title="Ayarlar"
+         Icon="gear.png"
+         ContentTemplate="{DataTemplate local:Ayarlar}"
+         Route="Ayarlar" />
 
 </Shell>

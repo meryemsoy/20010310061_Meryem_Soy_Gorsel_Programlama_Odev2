@@ -19,14 +19,19 @@
                  Text="Meryem Soy"
                  SemanticProperties.HeadingLevel="Level1"
                  FontSize="32"
-                 HorizontalOptions="Center" />
+                 HorizontalOptions="Center"/>
+            <Label
+                 Text="Ödev 2"
+                 SemanticProperties.HeadingLevel="Level2"
+                 FontSize="25"
+                 HorizontalOptions="Center"/>
 
             <Label
                 Text="Bartın üniversitesi Bilgisayar Mühendisliği"
-                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.HeadingLevel="Level3"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"/>
 
         </VerticalStackLayout>
     </ScrollView>

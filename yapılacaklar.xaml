@@ -2,32 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.yapılacaklar"
-             Title="Yapılacaklar"
-             Background="Black">
-    <StackLayout >
-        <Label Text="Yapılacaklar" FontSize="Title" HorizontalOptions="CenterAndExpand" Margin="0,20,0,10"  TextColor="White" />
+             Title="Yapılacaklar">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="plus.png" Order="Primary"  Clicked="YapılacakEkle_Clicked"/>
+        <ToolbarItem IconImageSource="refresh.png" Order="Primary" Clicked="YapılacakYukle_Clicked"/>
+    </ContentPage.ToolbarItems>
 
-        <StackLayout Orientation="Horizontal">
-            <Entry x:Name="yeniYapılacakEnty" TextColor="White" Placeholder="Yeni yapılacak ekle" HorizontalOptions="FillAndExpand" />
-            <Button Text="Ekle" BackgroundColor="Gray" Clicked="YapılacakEkle"/>
+    <CollectionView x:Name="listyapılacaklar" SelectionMode="Single">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Border BackgroundColor="Transparent">
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                          ColumnDefinitions="Auto,*,Auto,Auto" >
+                        <CheckBox Grid.Row="0" Grid.Column="0"   IsChecked="True" HorizontalOptions="EndAndExpand"/>
 
-        </StackLayout>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Gorev}" FontSize="Title" />
+                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding Detay}"/>
+                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding Tarih}"/>
+                        <Label Grid.Row="4" Grid.Column="1" Text="{Binding Saat}"/>
 
-        <CollectionView x:Name="yapılacaklarListesi">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="10">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <CheckBox IsChecked="{Binding Tamamlandı}"  Grid.Column="0" VerticalOptions="Center"/>
-                        <Label Text="{Binding İçerik}" TextColor="White" Grid.Column="1" VerticalOptions="Center"/>
+                        <ImageButton Grid.Row="1" Grid.Column="2" 
+                                     CommandParameter="{Binding ID}"
+                                     Source="pen.png"   Clicked="YapılacakDuzenle_Clicked" HorizontalOptions="End" VerticalOptions="End" HeightRequest="10"/>
+                        <ImageButton Grid.Row="1" Grid.Column="3"
+                                     CommandParameter="{Binding ID}"
+                                     Source="remove.png" Clicked="YapılacakSil_Clicked"  HorizontalOptions="End" HeightRequest="10"/>
+
                     </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-
-        <Button Text="Seçilenleri Sil" BackgroundColor="Gray" Clicked="SilButton_Clicked" HorizontalOptions="Center" />
-    </StackLayout>
+                </Border>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>
