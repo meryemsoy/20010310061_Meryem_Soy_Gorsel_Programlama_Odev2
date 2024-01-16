@@ -6,10 +6,25 @@ namespace MauiApp1
 {
     public partial class YapılacaklarDuzenle : ContentPage
     {
-        public YapılacaklarDuzenle()
+        private Yapilacak task;
+        private yapılacaklar parentPage;
+
+    
+        public YapılacaklarDuzenle(Yapilacak task, yapılacaklar parent)
         {
             InitializeComponent();
             // Initialize with default values or bind to a view model if necessary
+     
+            parentPage = parent;
+            this.task = task ?? new Yapilacak();
+            this.parentPage = parent;
+
+            // Populate the fields with the existing task data
+            txtGorev.Text = this.task.Gorev;
+            txtDetay.Text = this.task.Detay;
+            //DateTarih.Date = DateTime.Parse(this.task.Tarih);
+            txtSaat.Text = this.task.Saat;
+
         }
 
         private async void OkClicked(object sender, EventArgs e)

@@ -30,9 +30,27 @@ namespace MauiApp1.Models
 
             public async Task<List<Model>> GetAll()
             {
-                var res = (await Fire.Child("St").OnceAsync<Model>()).Select(x => new Model()
-                { Gorev = x.Object.Gorev, Detay = x.Object.Detay, Tarih = x.Object.Tarih, Saat = x.Object.Saat, ID = x.Key }).ToList();
-                return res;
+                try
+                {
+                    var firebaseData = await Fire.Child("St").OnceAsync<Model>();
+
+                    var res = firebaseData.Select(x => new Model
+                    {
+                        Gorev = x.Object.Gorev,
+                        Detay = x.Object.Detay,
+                        Tarih = x.Object.Tarih,
+                        Saat = x.Object.Saat,
+                        ID = x.Key
+                    }).ToList();
+
+                    return res;
+                }
+                catch (Exception ex)
+                {
+                    // Handle the exception, for example, log it or throw it again
+                    Console.WriteLine($"Error retrieving data: {ex.Message}");
+                    throw;
+                }
             }
 
             public async void DeleteOne(string ID)
@@ -44,7 +62,10 @@ namespace MauiApp1.Models
             {
                 await Fire.Child("St").Child(id).PutAsync<Model>(model);
             }
-        }
 
-    
+        }
+       
+
+
+
 }
